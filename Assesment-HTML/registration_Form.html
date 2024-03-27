@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link rel="stylesheet" href="registration_form.css" />
+
+  <body>
+    <form action="" method="post">
+      <div class="container">
+        <div class="header">
+          <u>Student Registeration Form</u>
+        </div>
+        <div class="field_1">
+          <label>Name:</label>
+          <input
+            type="text"
+            placeholder="Enter Your Name"
+            pattern="[A-Za-z]{3,6}"
+            title="plese write minimum 3 and maximum 6 lattter"
+            required
+          />
+        </div>
+
+        <div class="field_2">
+          <label>Last Name:</label>
+          <input
+            type="text"
+            placeholder="Enter your last name"
+            min="3"
+            max="6"
+            required
+          />
+        </div>
+
+        <div class="field_3">
+          <label>Email:</label>
+          <input
+            type="email"
+            placeholder="it should contain @."
+            value="a@a.a"
+            required
+          />
+        </div>
+
+        <div class="field_4">
+          <label>Mobile:</label>
+          <input
+            type="text"
+            pattern="[0-9]{10}"
+            title="only 10 digits numbers "
+            placeholder="only 10 digits are allowed"
+            required
+          />
+        </div>
+
+        <div class="field_5">
+          <label>Gender</label>
+          <input type="radio" id="genderChoice1" name="gender" value="male" />
+          <label for="genderChoice1">Male</label>
+          <input type="radio" id="genderChoice2" name="gender" value="female" />
+          <label for="genderChoice2">Female</label>
+        </div>
+
+        <div class="field_6">
+          <label>City</label>
+          <input type="text" required />
+        </div>
+
+        <div class="field_7">
+          <label>Address</label><br />
+          <textarea name="address" id="" cols="7" rows="7" required> </textarea>
+          <!-- <input type="text"> -->
+        </div>
+
+        <div class="field_8">
+          <label>AreaPIN</label>
+          <input type="text" required />
+        </div>
+
+        <div class="field_9">
+          <label>State</label>
+          <input type="text" required />
+        </div>
+
+        <div class="field_10">
+          <label> Qualification</label>
+          <select name="" id="" placeholder="saved Qualification" required>
+            <option value="" selected>saved Qualification</option>
+
+            <option value="">Graduated</option>
+            <option value="">Post Graduated</option>
+            <option value="">Other</option>
+            <!-- <option value="rms">Rameshwaram</option> -->
+          </select>
+        </div>
+        <div class="field_11 required">
+          <label>Speification</label>
+          <ul>
+            <input type="checkbox" name="" id="" checked />Computer Science<br />
+            <input type="checkbox" name="" id="" />Information Technology<br />
+            <input type="checkbox" name="" id="" />Computer Architecture
+            <br />
+            <input type="checkbox" name="" id="" />Tele communication
+
+            <br />
+          </ul>
+        </div>
+
+        <div class="field_12">
+          <label>Password</label>
+          <input type="text" required />
+        </div>
+        <div class="buttons">
+          <button>Registered</button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
