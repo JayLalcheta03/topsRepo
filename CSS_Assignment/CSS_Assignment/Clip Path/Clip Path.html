@@ -17,8 +17,6 @@
         height: 100%;
         width: 100%;
         color: white;
-
-        border: 2px solid black;
       }
       .box {
         font-size: 1.2rem;
@@ -32,7 +30,7 @@
         background-size: cover;
         background-image: linear-gradient(45deg, black, transparent),
           url(image_3.jpg);
-        clip-path: polygon(0 0, 100% 0%, 100% 93%, 53% 98%, 0 92%);
+        clip-path: polygon(0 0, 100% 0%, 100% 89%, 52% 100%, 0 90%);
       }
 
       header {
@@ -43,6 +41,13 @@
         /* padding-top: 10px; */
         justify-content: space-between;
         /* color: aliceblue; */
+      }
+      nav {
+        font-size: 1.3rem;
+        display: flex;
+        margin-top: 20px;
+        gap: 26px;
+        margin-right: 68px;
       }
 
       .logo span {
@@ -55,13 +60,18 @@
         text-decoration: none;
         color: white;
       }
-      nav a:nth-child(1) {
+      nav a:hover {
         color: red;
         text-decoration: underline;
       }
+      /* nav a:nth-child(1) {
+        color: red;
+        text-decoration: underline;
+      } */
       .info {
         text-align: center;
-        font-size: 2.1rem;
+        font-size: 1.3rem;
+        margin-top: 150px;
       }
       .second_decription {
         margin-left: auto;
@@ -72,11 +82,15 @@
       .btns {
         display: flex;
         color: aliceblue;
+        margin-left: 49px;
+        height: 40px;
+        gap: 51px;
         justify-content: center;
       }
       button {
         color: white;
         border: 2px solid white;
+        width: 11%;
       }
       .btns button:nth-child(1) {
         background-color: brown;
@@ -85,9 +99,9 @@
         background-color: black;
       }
       .icons {
-        margin-top: 20px;
+        margin-top: 50px;
 
-        height: 400px;
+        height: 270px;
         width: 100%;
         box-sizing: border-box;
         display: flex;
@@ -132,21 +146,70 @@
         font-size: 2.3rem;
         color: palevioletred;
       }
+      .arrow_icons {
+        position: relative;
+        display: flex;
+        gap: 87%;
+        justify-content: center;
+      }
+      .fa-solid {
+        color: white;
+        text-align: center;
+        font-size: 2.3rem;
+      }
+      .arrowicons_1 {
+        /* position: absolute; */
+        color: white;
+        top: 55%;
+        left: 50%;
+        height: 39px;
+        width: 45px;
+        /* border-radius: 50%; */
+        color: black;
+        background-color: grey;
+        z-index: 10;
+      }
+      .arrow_icons :hover {
+        background-color: brown;
+      }
+
+      body {
+        position: relative;
+      }
+
+      .anchor-icon {
+        position: absolute;
+        top: 63%;
+        left: 50%;
+        height: 48px;
+        width: 50px;
+        border-radius: 50%;
+        background-color: white;
+        z-index: 10;
+      }
+      .anchor-icon .fa-solid {
+        margin-left: 20%;
+
+        color: crimson;
+      }
     </style>
   </head>
   <body>
+    <div class="anchor-icon">
+      <i class="fa-solid fa-arrow-down"></i>
+    </div>
     <div class="container">
       <div class="box">
         <header>
           <div class="logo"><span>L</span>ogo</div>
           <nav>
-            <a href="">Home</a>
-            <a href="">About</a>
-            <a href="">Portifoliyo</a>
-            <a href="">Pricing</a>
-            <a href="">Team</a>
-            <a href="">Blog</a>
-            <a href="">Contact</a>
+            <a href="">HOME</a>
+            <a href="">ABOUT US</a>
+            <a href="">PORTFOLIO</a>
+            <a href="">PRICING</a>
+            <a href="">TEAM</a>
+            <a href="">BLOG</a>
+            <a href="">CONTACT</a>
           </nav>
         </header>
 
@@ -158,9 +221,17 @@
             sequi mollitia vero nam officiis maiores magnam, explicabo assumenda
             veritatis.
           </p>
+          <div class="arrow_icons">
+            <div class="arrowicons_1">
+              <i class="fa-solid fa-less-than"></i>
+            </div>
+            <div class="arrowicons_1">
+              <i class="fa-solid fa-greater-than"></i>
+            </div>
+          </div>
         </div>
         <div class="btns">
-          <button>INputButton</button>
+          <button>GET STARTED NOW</button>
           <button>LearnMore</button>
         </div>
       </div>
