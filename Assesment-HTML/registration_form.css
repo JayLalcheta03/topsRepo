@@ -31,9 +31,6 @@
   margin-left: 172px;
   margin-top: 5px;
 }
-/* .field_5 input {
-  height: 20px;
-} */
 .field_5 input:nth-child(2) {
   width: 20px;
   margin-left: 175px;
@@ -78,10 +75,10 @@
   background-color: green;
   color: white;
 }
-/* .field_11 input:nth-child(1) {
-  width: 40px;
-  margin-left: 100px;
-} */
+.field_date input{
+  width: 500px;
+  margin-left: 137px;
+}
 
 form {
   padding: 10px;
