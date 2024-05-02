@@ -6,17 +6,23 @@
     <title>Document</title>
     <style>
       .container {
+      
         height: 100vh;
         width: 100%;
-        background-color: black;
+        /* background-color: black; */
+        background-size: cover;
+        background-position: center;
+        background-image:url("Background_2.webp");
         position: relative;
       }
       svg {
         opacity: 0.5;
         position: absolute;
+        /* background-color: blue; */
         bottom: 0;
         left: 0;
       }
+
       .border {
         color: aliceblue;
         font-size: 1.5rem;
@@ -36,17 +42,26 @@
         background-color: blue;
       }
       .b1:hover .info {
-        top: -18px;
+        top: -10px;
         overflow: visible;
         background-color: red;
       }
+      .image1 {
+        height: 31px;
+        width: 54px;
+        border: 2px solid wheat;
+        border-radius: 50%;
+        background-size: cover;
+        background-position: center;
+        margin-top: 0px;
+      }
       .b1 .info {
         /* position: absolute; */
-        top: 0px;
+        margin-top: 4px;
         left: auto;
-        height: 50px;
+        height: 5px;
         width: 0px;
-        overflow: hidden;
+        /* overflow: hidden; */
         transition: all 300ms;
         /* text-align: center; */
       }
@@ -57,13 +72,13 @@
       .b2 {
         border: 2px solid white;
         position: absolute;
-        height: 30px;
-        width: 75px;
+        height: 31px;
+        width: 46px;
         text-align: center;
         left: 25%;
         bottom: 32%;
         border-radius: 50%;
-        background-color: green;
+        /* background-color: green; */
       }
 
       .b2 .info {
@@ -85,6 +100,15 @@
         top: -10px;
         overflow: visible;
         background-color: red;
+      }
+      .image2 {
+        height: 31px;
+        width: 54px;
+        border:2px solid white;
+        border-radius: 50%;
+        background-size: cover;
+        background-position: center;
+        margin-top: 0px;
       }
       .b3 {
         border: 2px solid white;
@@ -182,6 +206,9 @@
         width: 20px;
         bottom: 10px;
       }
+      .seperator{
+        margin-left: 20px;
+      }
       /* .line h1 {
         position: absolute;
         left: 31%;
@@ -201,29 +228,39 @@
         </svg>
         <div class="border">
           <div class="b1">
-            Sani
+            <img
+              class="image1"
+              src="https://pixahive.com/wp-content/uploads/2021/02/A-boy-345913-pixahive.jpg"
+            />
             <div class="info">
-              <h1>|</h1>
-              <p>
-                <b>WEB DESIGNER</b>
-                UI/UX DESIGNER
-              </p>
-              <!-- <h1>WEB DESIGNER</h1>
-              <p>UI/UX DESIGNER</p> -->
+              <!-- <h1>|</h1> -->
+              <div class="seperator">|</div>
+              <!-- <p -->
+              <b>WEB DESIGNER</b>
+              UI/UX DESIGNER
+              <!-- </p> -->
             </div>
           </div>
           <div class="b2">
-            Sanjay
+            <img
+              class="image2"
+              src="https://images.pexels.com/photos/708392/pexels-photo-708392.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            />
             <div class="info">
-              <h1>|</h1>
-              <p>
+              <div class="seperator">|</div>
+
+              <!-- <h1>|</h1> -->
+              <!-- <p> -->
                 <b>WEB DESIGNER</b>
                 UI/UX DESIGNER
-              </p>
+              <!-- </p> -->
             </div>
           </div>
           <div class="b3">
-            Sagar
+            <img
+              src=" https://pixahive.com/wp-content/uploads/2021/02/A-boy-345913-pixahive.jpg"
+            />
+
             <div class="info">
               <h1>|</h1>
               <p>
