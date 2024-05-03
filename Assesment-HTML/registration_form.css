@@ -15,7 +15,6 @@
 .header {
   text-align: center;
   border-radius: 8px;
-  /* text-align: center; */
   color: red;
   background-color: whitesmoke;
 }
@@ -26,67 +25,7 @@
   border-radius: 12px;
   border: none;
 }
-/* .field_1 input {
-  height: 20px;
-  width: 500px;
-  margin-left: 180px;
-  margin-top: 20px;
-}
-.field_2 input {
-  width: 500px;
-  margin-left: 147px;
-  margin-top: 5px;
-}
-.field_3 input {
-  width: 500px;
-  margin-left: 180px;
-  margin-top: 5px;
-}
-.field_4 input {
-  width: 500px;
-  margin-left: 172px;
-  margin-top: 5px;
-}
-.field_5 input:nth-child(2) {
-  width: 20px;
-  margin-left: 175px;
-  margin-top: 5px;
-}
-.field_6 input {
-  width: 500px;
-  margin-left: 195px;
-  margin-top: 5px;
-}
-.field_7 textarea {
-  width: 500px;
-  margin-left: 225px;
-  margin-top: 5px;
-}
-.field_8 input {
-  width: 500px;
-  margin-left: 160px;
-  margin-top: 5px;
-}
-.field_9 input {
-  width: 500px;
-  margin-left: 185px;
-  margin-top: 5px;
-}
-.field_10 select {
-  width: 100px;
-  margin-left: 133px;
-  margin-top: 5px;
-}
-.field_11 input {
-  width: 40px;
-  margin-left: 165px;
-  display: inline-block;
-}
-.field_12 input {
-  width: 500px;
-  margin-left: 150px; */
-  /* display: inline-block; */
-/* } */
+
 .buttons button {
   background-color: green;
   color: white;
