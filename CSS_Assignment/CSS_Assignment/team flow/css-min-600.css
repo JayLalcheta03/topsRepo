@@ -1,0 +1,21 @@
+@media (min-width: 600px) {
+  .wrapper {
+    display: block;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  nav {
+    margin-left: 0;
+  }
+  .fa-solid.fa-bars {
+    display: none;
+  }
+  header {
+    flex-direction: column;
+  }
+  .logo {
+    width: 100%;
+    text-align: center;
+  }
+}

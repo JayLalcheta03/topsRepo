@@ -1,0 +1,12 @@
+@media (min-width: 992px) and (orientation: landscape) {
+  header {
+    flex-direction: row;
+  }
+  .logo {
+    width: auto;
+  }
+  nav {
+    width: auto;
+    margin-left: auto;
+  }
+}

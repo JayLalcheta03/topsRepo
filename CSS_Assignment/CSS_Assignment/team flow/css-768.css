@@ -1,0 +1,29 @@
+@media (min-width: 768px) {
+  .wrapper {
+    display: block;
+  }
+  .fa-solid.fa-bars {
+    display: none;
+  }
+  header {
+    flex-direction: column;
+  }
+  .logo {
+    width: 100%;
+    text-align: center;
+  }
+  .btns {
+    width: 25%;
+  }
+  nav {
+    width: 70%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
