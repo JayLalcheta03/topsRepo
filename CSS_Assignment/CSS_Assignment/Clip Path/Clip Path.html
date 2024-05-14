@@ -10,9 +10,22 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
 
     <style>
+      *{
+        .poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+      }
       .container {
         height: 100%;
         width: 100%;
@@ -49,9 +62,12 @@
         gap: 26px;
         margin-right: 68px;
       }
-
+      .logo {
+        margin-left: 20%;
+        border: 6px solid white;
+      }
       .logo span {
-        border: 3px solid black;
+        /* border: 3px solid black; */
         background-color: white;
         color: black;
       }
@@ -62,6 +78,7 @@
       }
       nav a:hover {
         color: red;
+        /* gap: 20px;margin-top: 2px; */
         text-decoration: underline;
       }
       /* nav a:nth-child(1) {
@@ -73,10 +90,13 @@
         font-size: 1.3rem;
         margin-top: 150px;
       }
+      .info h1{
+        font-size: 3.3rem;
+      }
       .second_decription {
         margin-left: auto;
         margin-right: auto;
-        width: 50%;
+        width: 45%;
       }
 
       .btns {
@@ -109,7 +129,7 @@
         justify-content: space-around;
         padding: 20px;
         color: black;
-        border: 2px solid black;
+        /* border: 2px solid black; */
         /* background-color: aqua; */
       }
       .icon_i {
@@ -126,14 +146,21 @@
         transition: all 300ms;
       }
       .icon_i:hover {
+        
         color: tomato;
+      }
+      .icon_i b{
+        display: flex;
+        margin-top: 20px;
+        margin-left: 30px;
+        font-size: 19px;
       }
       .effect {
         height: 50px;
         width: 50px;
         border: 1px solid black;
         position: absolute;
-        left: 95px;
+        left: 94px;
         top: 9px;
         opacity: 0;
         transition: all 600ms;
@@ -149,21 +176,24 @@
       .arrow_icons {
         position: relative;
         display: flex;
+        text-align: center;
         gap: 87%;
+        top: -150px;
         justify-content: center;
       }
-      .fa-solid {
+      .arrowicons_1 .fa-solid {
         color: white;
         text-align: center;
-        font-size: 2.3rem;
+        padding: 5px;
+        font-size: 1.5rem;
       }
       .arrowicons_1 {
         /* position: absolute; */
         color: white;
         top: 55%;
         left: 50%;
-        height: 39px;
-        width: 45px;
+        height: 32px;
+        width: 40px;
         /* border-radius: 50%; */
         color: black;
         background-color: grey;
@@ -217,9 +247,10 @@
           <p>our clients are our first portifoliyo</p>
           <h1>welcome to sky</h1>
           <p class="second_decription">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam eius
-            sequi mollitia vero nam officiis maiores magnam, explicabo assumenda
-            veritatis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
+            consectetur alias ab aspernatur dolor adipisci itaque in similique
+            accusamus facere. Dolores, repudiandae dicta? Dolore nobis
+            repudiandae totam error ipsa. Vitae?
           </p>
           <div class="arrow_icons">
             <div class="arrowicons_1">
@@ -242,7 +273,7 @@
         <div class="icon_i">
           <div class="effect"></div>
           <i class="fa-regular fa-heart"></i>
-          <h1>SLEEK DESIGN</h1>
+          <b>SLEEK DESIGN</b>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
             expedita!
@@ -252,7 +283,7 @@
         <div class="icon_i">
           <div class="effect"></div>
           <i class="fa-regular fa-heart"> </i>
-          <h1>CLEAN CODE</h1>
+          <b>CLEAN CODE</b>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
             expedita!
@@ -261,8 +292,9 @@
         <!--box3-->
         <div class="icon_i">
           <div class="effect"></div>
-          <i class="fa-regular fa-heart"> </i>
-          <h1>CLEAN CODE</h1>
+          <i class="fa-regular fa-lightbulb"></i>
+          <!-- <i class="fa-regular fa-heart"> </i> -->
+          <b>CREATIVE IDEAS</b>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
             expedita!
@@ -271,8 +303,9 @@
         <!--box4-->
         <div class="icon_i">
           <div class="effect"></div>
-          <i class="fa-regular fa-heart"> </i>
-          <h1>CLEAN CODE</h1>
+          <i class="fa-regular fa-message"></i>
+          <!-- <i class="fa-regular fa-heart"> </i> -->
+          <b>FREE SUPPORT</b>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
             expedita!
