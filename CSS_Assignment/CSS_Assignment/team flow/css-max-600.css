@@ -7,7 +7,6 @@
   }
   header {
     padding: 10px 20px;
-    /* position: relative; */
   }
 
   .fa-solid.fa-bars {
@@ -16,17 +15,6 @@
   main {
     padding: 20px;
   }
-  /* .wrapper {
-    position: absolute;
-    top: 100px;
-    right: -100%;
-    transition: all 300ms;
-  }
-  #toggle:checked + .wrapper {
-    display: block;
-    right: 25%;
-  } */
-
   .mail-wrapper {
     flex-wrap: wrap;
     justify-content: center;
@@ -41,19 +29,15 @@
     width: 100%;
   }
   .mail-wrapper .mail_info input {
-    /* width: 100%; */
   }
   .btns {
     width: 100%;
   }
   .mail-wrapper .btns button {
-    /* width: 72%; */
     height: auto;
     width: auto;
     padding: 5px 50px;
     border-radius: 3px;
-
-    /* margin-left: 77px; */
   }
   .info {
     width: 100%;
@@ -88,7 +72,6 @@
     margin: 0;
   }
   .group_info1 {
-    /* margin-left: 20%; */
     height: 100px;
     width: 100%;
   }
@@ -132,8 +115,6 @@
     /* width: 100%; */
     padding-bottom: 20px;
   }
-  /* .footer_end_info {
-  } */
   .footer_end_img {
     display: none;
   }
@@ -155,34 +136,18 @@
     flex-direction: column-reverse;
     height: 550px;
     justify-content: center;
-    /* flex-wrap: wrap;
-    flex-wrap: wrap-reverse; */
   }
   .Team_work_info {
-    /* display: flex; */
     height: 700px;
   }
   .Team_work_info b {
-    /* width: 162px;
-    height: 56px; */
     display: flex;
     text-align: center;
-    /* margin-left: 60%; */
-    /* justify-content: center; */
   }
   .Team_work_info p {
     width: 340px;
     text-align: center;
     margin-left: 11px;
-    /* display: flex; */
-    /* flex-direction: row; */
-    /* flex-wrap: wrap; */
-    /* justify-content: center; */
-    /* width: 168px;
-    height: 100px;
-    display: flex;
-    text-align: center;
-    margin-left: 157px; */
   }
   .Team_work_info button {
     height: 50px;
@@ -213,14 +178,7 @@
 
   .customer_info {
     width: 100%;
-    /* margin-top: 253px; */
   }
-  /* .customer_info h1 {
-  } */
-  /* .customer_info p {
-    width: 100%;
-    margin: 0;
-  } */
   .container_box1 {
     display: flex;
     flex-direction: column;
@@ -228,7 +186,6 @@
     width: 100%;
     padding: 10px;
     font-size: 16px;
-    /* height: fit-content; */
   }
 
   .container_box_info {
@@ -246,7 +203,6 @@
     margin-top: 20px;
     width: 100%;
     display: flex;
-    /* flex-direction: column; */
     gap: 15px;
     align-items: center;
     justify-content: center;
@@ -256,8 +212,6 @@
     position: relative;
   }
   .wrapper {
-    /* display: flex; */
-    /* align-items: end; */
     position: absolute;
     top: 50px;
     right: -100%;
@@ -267,12 +221,6 @@
   #toggle:checked + .wrapper {
     display: block;
     right: 0;
-    /* display: flex; */
     flex-direction: column;
-  }
-
-  nav ul {
-    /* display: flex;
-    flex-direction: column; */
   }
 }

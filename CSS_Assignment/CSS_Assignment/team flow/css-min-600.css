@@ -18,4 +18,39 @@
     width: 100%;
     text-align: center;
   }
+  .info {
+    width: 52%;
+  }
+  .customer_image {
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  .group_info1 {
+    width: 285px;
+  }
+  .Team_work_img {
+    width: 60%;
+  }
+  .Team_work_info {
+    padding: 0px;
+  }
+  .container {
+    display: flex;
+  }
+  .container_box_buttons {
+    width: 33%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .Team_work_info button {
+    width: 67%;
+  }
+  footer {
+    padding: 16px 13px;
+    width: 109%;
+  }
+  .footer_items {
+    gap: 29px;
+  }
 }
