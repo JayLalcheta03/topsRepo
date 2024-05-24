@@ -3,7 +3,12 @@
     display: block;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    gap: 10px;
+  }
+  main {
+    padding: 20px 50px;
   }
   nav {
     margin-left: 0;
@@ -26,12 +31,13 @@
     display: flex;
     justify-content: center;
   }
-  .group_info1 {
-    width: 285px;
-  }
-  .Team_work_img {
+  /* .group_info1 {
+    width: fit-content;
+    max-width: 230px;
+  } */
+  /* .Team_work_img {
     width: 60%;
-  }
+  } */
   .Team_work_info {
     padding: 0px;
   }
@@ -53,4 +59,25 @@
   .footer_items {
     gap: 29px;
   }
+  nav {
+    width: 100%;
+  }
+  nav ul li {
+    margin: 0;
+    height: fit-content;
+  }
+  /* .group {
+    flex-wrap: wrap;
+  }
+  .group img {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .ginfo {
+    margin: 0;
+    gap: 15px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  } */
 }

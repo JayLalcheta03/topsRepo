@@ -72,12 +72,14 @@
     margin: 0;
   }
   .group_info1 {
-    height: 100px;
+    height: 64px;
     width: 100%;
   }
   .container {
     height: auto;
     margin-top: 20px;
+    row-gap: 0px
+    ;
   }
   .work_1 {
     height: auto;
@@ -99,7 +101,7 @@
     display: none;
   }
   footer {
-    padding: 50px 100px;
+    padding: 20px;
   }
 
   .footer_items {
@@ -128,6 +130,7 @@
   }
   .fa-solid.fa-bars {
     display: block;
+    font-size: 24px;
     /* display: none; */
   }
   .Team_work_things {
@@ -139,19 +142,27 @@
   }
   .Team_work_info {
     height: 700px;
+    width: 100%;
+    text-align: center;
+  }
+  .Team_work_info h1{
+    font-size: 30px;
+    width: 100%;
+
+
   }
   .Team_work_info b {
     display: flex;
     text-align: center;
   }
   .Team_work_info p {
-    width: 340px;
+    width: 243px;
     text-align: center;
-    margin-left: 11px;
+    margin-left: 20px;
   }
   .Team_work_info button {
     height: 50px;
-    width: 293px;
+    width: 262px;
     padding: 10px;
     margin-left: 12px;
     margin-top: 25px;
@@ -162,10 +173,16 @@
   .Team_work_img {
     width: 100%;
   }
+  /* .container_box{
+    width: 40%;
+  } */
 
   .customer_image {
     display: flex;
     flex-wrap: wrap;
+  }
+  .customer_image h1{
+    font-size: 20px;
   }
   .customer_image1 {
     min-width: 300px;
@@ -203,6 +220,7 @@
     margin-top: 20px;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
     align-items: center;
     justify-content: center;
@@ -216,11 +234,44 @@
     top: 50px;
     right: -100%;
     transition: all 300ms;
-    background-color: rgba(211, 211, 211, 0.519);
+    background-color: rgba(211, 211, 211, 0.899);
+    border-radius: 8px;
+  }
+  nav ul,
+  .other {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    width: 100%;
   }
   #toggle:checked + .wrapper {
     display: block;
     right: 0;
     flex-direction: column;
+    align-items: end;
+  }
+  nav ul li {
+    margin: 0;
+  }
+
+  .fa-chevron-down {
+    margin-left: 5px;
+    font-size: 0.8em;
+  }
+  .sign-up-btn {
+    margin: 0;
+  }
+
+  .info p,
+  .info h1 {
+    margin-left: 0;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
