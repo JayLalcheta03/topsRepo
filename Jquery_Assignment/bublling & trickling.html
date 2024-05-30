@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent {
+        height: 500px;
+        width: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: wheat;
+        margin: 50px auto;
+      }
+
+      .child {
+        height: 300px;
+        width: 300px;
+        /* height: 100px;
+        width: 100px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: yellowgreen;
+        border: 1px solid;
+      }
+      .sub-child {
+        height: 100px;
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: tomato;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child"><div class="sub-child"></div></div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    
+    <script>
+    // j query is not suppot trickling becuse it code is write in javascript. 
+      let parent = document.getElementsByClassName('parent')[0];
+      let child = document.getElementsByClassName('child')[0];
+      let subChild = document.getElementsByClassName('sub-child')[0];
+
+      subChild.addEventListener(
+        'click',
+        (e) => {
+          // e.stopPropagation();
+          console.log('Sub child clicked');
+        },
+        true
+      );
+      child.addEventListener(
+        'click',
+        (e) => {
+          // e.stopPropagation();
+          console.log('Child clicked');
+          // console.log('Body code will be run');
+        },
+        true
+      );
+      parent.addEventListener(
+        'click',
+        (e) => {
+          // e.stopPropagation();
+          console.log('Parent clicked');
+        },
+        true
+      );
+      document.getElementsByTagName('body')[0].addEventListener(
+        'click',
+        (e) => {
+          //   e.stopPropagation();
+          console.log('Body clicked');
+        },
+        true
+      );
+      document.getElementsByTagName('html')[0].addEventListener(
+        'click',
+        (e) => {
+          //   e.stopPropagation();
+          console.log('HTML clicked');
+        },
+        true
+      );
+
+      </script>
+    <script>
+      $('html').click(() => {
+        console.log('HTML clicked');
+      });
+      $('body').click(() => {
+        console.log('Body clicked');
+      });
+      $('.parent').click(() => {
+        console.log('Parent clicked');
+      });
+      $('.child').click(() => {
+        console.log('Child clicked');
+      });
+      $('.sub-child').click(() => {
+        console.log('Sub-child clicked');
+      });
+    </script>
+  </body>
+</html>
