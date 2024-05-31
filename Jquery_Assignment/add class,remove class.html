@@ -4,10 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>Document</title>
-    
   </head>
   <body>
-    <div>Box</div>
+    <div><p>Box</p></div>
     <button>Click here</button>
     <img
       src="https://images.pexels.com/photos/3829441/pexels-photo-3829441.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -20,34 +19,36 @@
       referrerpolicy="no-referrer"
     ></script>
     <script>
-        //adding class
-        $("div").addClass("box");
+      //adding class
+      $("div").addClass("box");
 
-        //apply css
-        
-        $('.box').css({'color': 'white','background-color': 'yellowgreen'})
-        
-   
-        //remove class
-        console.log($('img').attr('src'));
-        $('img').removeAttr('src');
+      //apply css
+      $("p").css({'padding':'30px'}),
+      $("button").css({'margin-top':'30px'})
 
-        //animation
-        
-      $('button').click(() => {
-        $('.box').css({
-            'background-color': 'red',
-            color: 'black',
-            border: '5px solid white',
-          })
+      $(".box").css({
+        color: "white",
+        "background-color": "yellowgreen",
+        height: "100px",
+        width: "100px",
+
+      })
+
+      //remove class
+      console.log($("img").attr("src"));
+      $("img").removeAttr("src");
+
+      //animation
+
+      $("button").click(() => {
+        $("div").animate({
+          
+          left: "250px",
+          height: "150px",
+          width: "150px",
+        });
       });
-       $('button').dblclick(() => {
-        $('.box').css({
-            'background-color': 'yellowgreen',
-            color: 'black',
-            border: '5px solid white',
-          })
-      });
+
     </script>
   </body>
 </html>
