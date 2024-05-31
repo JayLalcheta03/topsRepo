@@ -1,0 +1,249 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  margin: 0 auto;
+  padding: 20px 70px;
+  font-size: 1.3rem;
+}
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  /* font-size: 1.3rem; */
+}
+.head_menu {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.858);
+  height: 55px;
+  font-size: 1.3rem;
+  color: rgba(240, 255, 255, 0.897);
+  border-bottom: 1px solid white;
+}
+.head_menu a {
+  color: beige;
+}
+.logo {
+  padding-top: 30px;
+  display: flex;
+  width: 50%;
+}
+.logo_section {
+  display: flex;
+}
+.logo img {
+  height: 103px;
+  padding-left: 30px;
+  /* width: 50px; */
+  box-sizing: border-box;
+  object-fit: cover;
+}
+.logo_section h1 {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 39px 25px;
+}
+.search_icon {
+  width: 50%;
+}
+.horizontal_menu {
+  height: 232px;
+  background-color: rgba(25, 4, 4, 0.862);
+}
+/* .head_menu {
+      display: flex;
+    } */
+.menu_box {
+  margin-top: 30px;
+  gap: 30px;
+  padding-right: 50px;
+  justify-content: end;
+  display: flex;
+}
+.menu_box1 {
+  padding: 13px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.696);
+  /* background-color: grey; */
+  height: 50px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 17px;
+  width: 12%;
+}
+.searchbox {
+  margin-left: 3%;
+  margin-top: 77px;
+  height: 40px;
+}
+input[type="search"] {
+  height: 32px;
+  border-radius: 20px;
+}
+.serch_icon_info {
+  position: relative;
+  justify-content: center;
+  display: flex;
+}
+.fa-solid {
+  margin: 6px;
+  font-size: 20px;
+}
+
+.serchbox_icon {
+  position: absolute;
+  left: 39%;
+  top: 78px;
+  width: 5%;
+  border-radius: 20px;
+  background-color: blueviolet;
+}
+.first_word {
+  color: white;
+}
+.secound_word {
+  color: green;
+}
+
+.menubox_service_info {
+  /* display: flex; */
+  position: absolute;
+  background-color: orangered;
+  height: 40%;
+  display: none;
+  right: 5%;
+  width: 90%;
+  top: 310px;
+}
+/* .menu_box1{
+      position: relative;
+    } */
+.menu_box1:hover {
+  background-color: orangered;
+  color: white;
+}
+.menu_box1:hover .menubox_service_info {
+  /* display: inline; */
+  /* display: block; */
+  display: flex;
+  /* width: 50%; */
+}
+.menu_box_img img {
+  box-sizing: border-box;
+  height: 200px;
+  margin-top: 33px;
+  padding-left: 94px;
+}
+.menu_box_info p {
+  margin-top: 47px;
+  text-align: justify;
+  padding-right: 3%;
+  padding-left: 73px;
+  /* width: 30px; */
+}
+.menu_box_info h1 {
+  color: white;
+  margin-top: 30px;
+}
+
+.menu_box_info p {
+  margin-top: 14px;
+  /* text-align: justify; */
+  /* width: 30px; */
+}
+.company_intro_and_image {
+  /* width: 50%; */
+}
+.company_intruction {
+  margin-top: 30px;
+}
+.company_intro_and_image {
+  display: flex;
+  width: 100% /* flex-direction: column; */ /* gap: 20px */;
+}
+.company_intro {
+  width: 70%;
+  padding-right: 61px;
+  display: flex;
+  flex-direction: column;
+}
+.company_intro_and_image .company_image {
+  width: 30%;
+}
+.company_intro_and_image .company_info {
+  width: 50%;
+}
+.company_intro_and_image img {
+  height: 436px;
+  width: 100%;
+  box-sizing: border-box;
+  /* object-fit: contain;          */
+}
+.company_intro {
+  /* width: 50%; */
+}
+.company_image {
+  width: 50%;
+}
+/* .compony_footer_section { */
+  /* background-color: black; */
+/* } */
+.company_footer_section {
+  background-color: black;
+  height: 200px;
+  color: white;
+  /* text-decoration: none; */
+}
+ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  gap: 20px;
+}
+ul li {
+  text-decoration: none;
+}
+.company_footer_info {
+  padding-top: 30px;
+  /* display: flex; */
+  /* justify-content: center; */
+}
+
+h3 {
+  /* width: 30%; */
+  gap: 24px;
+  display: flex;
+  color: rgba(240, 248, 255, 0.432);
+  justify-content: center;
+}
+.company_footer_info h4 {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  color: rgba(240, 248, 255, 0.579);
+
+  gap: 20px;
+}
+.footer_coppyright_info {
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+}
+.footer_coppyright_info h4 {
+  width: 34%;
+  text-align: center;
+  color: rgba(240, 248, 255, 0.211);
+
+  /* display: flex; */
+  /* justify-content: center; */
+  /* text-align: center; */
+
+}
+
+/* .company_image{
+          width: 50%;
+        } */

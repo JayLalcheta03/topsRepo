@@ -1,0 +1,128 @@
+* {
+  font-size: 1.3rem;
+}
+body {
+  padding: 30px;
+  font-size: 1.3rem;
+}
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  /* font-size: 1.3rem; */
+}
+.head_menu {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.858);
+  height: 55px;
+  font-size: 1.3rem;
+  color: rgba(240, 255, 255, 0.897);
+  border-bottom: 1px solid white;
+}
+.head_menu a {
+  color: beige;
+}
+.company_contact_section {
+  /* height: 700px; */
+  margin: 3px;
+  /* padding: 20px; */
+
+  color: beige;
+  /* background-color: aquamarine; */
+}
+.contactimage{
+  padding: 59px;
+}
+.contactform {
+  /* width: ; */
+  display: grid;
+  row-gap: 26px;
+  grid-template-columns: 269px 300px;
+}
+.contactForm_and_image {
+  background-color: beige;
+  display: flex;
+  justify-content: space-around;
+  /* justify-content: flex-; */
+  height: 400px;
+}
+form{
+  padding-top: 59px;
+}
+
+.company_contact_section h2 {
+  text-align: center;
+  font-size: 1.9rem;
+  color: blue;
+}
+label {
+  color: blue;
+  /* display: flex; */
+  /* margin-top: 30px; */
+  column-gap: 30px;
+  justify-content: space-between;
+  flex-direction: row;
+}
+button{
+  width: 50%;
+  background-color: darkgreen;
+  color: beige;
+  border-radius: 1.3rem;
+
+}
+
+
+/* footer section */
+.company_footer_section {
+  background-color: black;
+  height: 200px;
+  color: white;
+  /* text-decoration: none; */
+}
+ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  gap: 20px;
+}
+ul li {
+  text-decoration: none;
+}
+.company_footer_info {
+  padding-top: 5px;
+  /* display: flex; */
+  /* justify-content: center; */
+}
+
+h3 {
+  /* width: 30%; */
+  gap: 24px;
+  display: flex;
+  color: rgba(240, 248, 255, 0.432);
+  justify-content: center;
+}
+.contactimage img{
+  height: 293px;
+  width: 300px;
+}
+.company_footer_info h4 {
+  display: flex;
+  justify-content: center;
+  /* margin-top: 20px; */
+  color: rgba(240, 248, 255, 0.579);
+
+  gap: 20px;
+  margin-bottom: 5px;
+}
+.footer_coppyright_info {
+  display: flex;
+  /* padding: 20px; */
+  justify-content: center;
+}
+.footer_coppyright_info h4 {
+  width: 42%;
+  text-align: center;
+  color: rgba(240, 248, 255, 0.211);
+  margin-top: 0px;
+}
