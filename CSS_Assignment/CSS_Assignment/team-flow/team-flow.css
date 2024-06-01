@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 header {
@@ -166,6 +166,7 @@ main {
   flex-direction: column;
   row-gap: 59px;
   margin-left: 48px;
+  flex-wrap: wrap;
 }
 .ginfo h1 {
   font-size: 20px;
@@ -185,7 +186,7 @@ main {
   background-color: rgba(211, 211, 211, 0.533);
 }
 .group_info1::before {
-  content: "";
+  content: '';
   height: 100%;
   width: 4px;
   background-color: skyblue;
@@ -358,7 +359,7 @@ main {
   display: flex;
   align-items: center;
 }
-input[type="checkbox"] {
+input[type='checkbox'] {
   display: none;
 }
 #toggle:checked + .wrapper {
@@ -379,7 +380,7 @@ input[type="checkbox"] {
   margin: auto;
   width: 50%;
 }
-.Team_work_info h1{
+.Team_work_info h1 {
   width: 67%;
 }
 .Team_work_info button {
@@ -396,7 +397,7 @@ input[type="checkbox"] {
   width: 76%;
 }
 .Team_work_info b {
-font-size: 2.3rem;
+  font-size: 2.3rem;
 }
 .Team_work_img {
   width: 50%;

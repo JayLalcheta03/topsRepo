@@ -78,8 +78,7 @@
   .container {
     height: auto;
     margin-top: 20px;
-    row-gap: 0px
-    ;
+    row-gap: 0px;
   }
   .work_1 {
     height: auto;
@@ -145,11 +144,9 @@
     width: 100%;
     text-align: center;
   }
-  .Team_work_info h1{
+  .Team_work_info h1 {
     font-size: 30px;
     width: 100%;
-
-
   }
   .Team_work_info b {
     display: flex;
@@ -181,7 +178,7 @@
     display: flex;
     flex-wrap: wrap;
   }
-  .customer_image h1{
+  .customer_image h1 {
     font-size: 20px;
   }
   .customer_image1 {
@@ -273,5 +270,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .work_img {
+    height: 70px;
+    width: 70px;
+  }
+
+  .work_1 {
+    padding: 5px;
   }
 }

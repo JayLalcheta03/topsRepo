@@ -26,4 +26,19 @@
     justify-content: center;
     align-items: center;
   }
+
+  .ginfo {
+    justify-content: center;
+  }
+  .info {
+    width: 70%;
+  }
+
+  .Team_work_things {
+    align-items: center;
+  }
+  .customer_info {
+    width: 70%;
+    margin: 0 auto;
+  }
 }

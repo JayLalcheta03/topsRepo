@@ -1,0 +1,33 @@
+@media (min-width: 992px) {
+  header {
+    flex-direction: row;
+  }
+  .wrapper {
+    flex-direction: row;
+  }
+  .logo {
+    width: auto;
+    font-size: 36px;
+  }
+  nav {
+    width: auto;
+    margin-left: auto;
+  }
+  .group {
+    display: flex;
+  }
+  .group .group-img {
+    max-width: 45%;
+    object-fit: cover;
+  }
+  .ginfo {
+    width: 45%;
+  }
+  .Team_work_things {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .Team_work_things .Team_work_info {
+    width: 45%;
+  }
+}
