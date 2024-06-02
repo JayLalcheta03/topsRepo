@@ -1,0 +1,108 @@
+<style>
+  /* general */
+  body {
+    background: #f4a261;
+  }
+  h1 {
+    font-family: sans-serif;
+    color: #264653;
+  }
+  .slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  /* slides */
+  .slider__img {
+    position: relative;
+    overflow: hidden;
+    min-width: 400px;
+    min-height: 400px;
+  }
+  .slider__img img {
+    position: absolute;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+  }
+  .slider__img img.prev {
+    transform: translateX(-100%);
+  }
+  .slider__img img.next {
+    transform: translateX(100%);
+  }
+  .slider__img img.current {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  /* slider button */
+  button {
+    padding: 1em;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    outline: salmon;
+    cursor: pointer;
+    background: #2a9d8f;
+  }
+</style>
+
+<div class="slider">
+  <h1>jQuery Slider</h1>
+  <div class="slider__img">
+    <img src="https://picsum.photos/id/10/400/" class="prev" />
+    <img src="https://picsum.photos/id/1003/400/" class="current" />
+    <img src="https://picsum.photos/id/1002/400/" class="next" />
+  </div>
+  <div class="slider__btn">
+    <button class="prevBtn">prev</button>
+    <button class="nextBtn">next</button>
+  </div>
+</div>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
+<script>
+  $("document").ready(function () {
+    // next button click event
+    $(".nextBtn").click(function () {
+      // select image slides
+      let current = document.querySelector(".current");
+      let prev = document.querySelector(".prev");
+      let next = document.querySelector(".next");
+      // remove class
+      $(current).removeClass("current");
+      $(prev).removeClass("prev");
+      $(next).removeClass("next");
+
+      // add class
+      $(current).addClass("prev");
+      $(prev).addClass("next");
+      $(next).addClass("current");
+    });
+
+    // prev button click event
+    $(".prevBtn").click(function () {
+      // select image slides
+      let current = document.querySelector(".current");
+      let prev = document.querySelector(".prev");
+      let next = document.querySelector(".next");
+
+      // remove class
+      $(current).removeClass("current");
+      $(prev).removeClass("prev");
+      $(next).removeClass("next");
+
+      // add class
+      $(current).addClass("next");
+      $(prev).addClass("current");
+      $(next).addClass("prev");
+    });
+  });
+</script>

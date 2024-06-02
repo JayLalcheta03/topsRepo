@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      padding: 5px;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    form{
+        width: fit-content;
+        margin: 0px auto;
+        background-color:blanchedalmond;
+    }
+    input[type=text]{
+        padding-left: 5px;
+    }
+    #result {
+      width: 30px;
+      color: blue;
+
+    }
+    h2{
+      text-align: center;
+    }
+    h3{
+      
+      text-align: center;
+      margin-top: 30px;
+    }
+    .marksheets {
+      padding: 20px;
+      display: grid;
+      row-gap: 10px;
+      grid-template-columns: 150px 300px;
+    }
+    input[type=button]{
+      text-align: center;
+        height: 30px;
+        width: 70px;
+    }
+    #pers{
+      color: blue;
+    }
+  </style>
+  <script>
+    function show() {
+      marks1 = parseInt(document.getElementById("first_subjectmarks").value);
+      marks2 = parseInt(document.getElementById("secound_subjectmarks").value);
+      marks3 = parseInt(document.getElementById("third_subjectmarks").value);
+      marks4 = parseInt(document.getElementById("fourth_subjectmarks").value);
+      marks5 = parseInt(document.getElementById("fifth_subjectmarks").value);
+      marks6 = parseInt(document.getElementById("sixth_subjectmarks").value);
+      marks7 = parseInt(document.getElementById("seventh_subjectmarks").value);
+
+
+      document.getElementById("result").innerHTML = (marks1 + marks2 + marks3 );
+      document.getElementById("pers").innerHTML=(marks1 + marks2 + marks3)*100/350;
+    }
+  </script>
+  <body>
+    <form action method="post">
+      <div class="container">
+        <h2>Marksheet For Information Technology</h2>
+        <h3>Enter Marks</h3>
+        <div class="marksheets">
+          <label id="label_1">1. C Language</label>
+          <input type="text" id="first_subjectmarks" />
+          <label id="label_2">2. C++ Language :</label>
+          <input type="text" id="secound_subjectmarks" />
+          <label id="label_3">3. Database :</label>
+          <input type="text" id="third_subjectmarks" />
+          <label id="label_4">4. HTML :</label>
+          <input type="text" id="fourth_subjectmarks" />
+          <label id="label_5">5. CSS :</label>
+          <input type="text" id="fifth_subjectmarks" />
+          <label id="label_6">6. php :</label>
+          <input type="text" id="sixth_subjectmarks" />
+          <label id="label_7">7. Core java :</label>
+          <input type="text" id="seventh_subjectmarks" /><br>
+
+
+
+          <input type="button" onclick="show()" value="Result" />
+          <label>Total is:<span id="result"></span>/350</label>
+         <label> percentage is:<span id="pers"></span>%
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

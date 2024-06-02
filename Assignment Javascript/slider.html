@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      .wrapper {
+        width: 600px;
+        height: 300px;
+        border-radius: 12px;
+        overflow: scroll;
+        margin: 50px auto;
+        position: relative;
+      }
+      .parent {
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+      }
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+      .left,
+      .right {
+        font-size: 32px;
+        position: absolute;
+        top: 350px;
+        left: 50%;
+      }
+      .left {
+        left: 45%;
+      }
+      .right {
+        left: 55%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="parent">
+        <img
+          src="https://images.pexels.com/photos/6920581/pexels-photo-6920581.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt=""
+        />
+        <img
+          src="https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt=""
+        />
+        <img
+          src="https://images.pexels.com/photos/6572456/pexels-photo-6572456.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt=""
+        />
+        <img
+          src="https://images.pexels.com/photos/5956458/pexels-photo-5956458.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt=""
+        />
+        <img
+          src="https://images.pexels.com/photos/6398585/pexels-photo-6398585.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt=""
+        />
+      </div>
+
+      <div class="left"><</div>
+      <div class="right">></div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $('.left').click(() => {
+        $('.parent').css('left', '-600px');
+      });
+    </script>
+  </body>
+</html>
