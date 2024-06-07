@@ -13,6 +13,8 @@
     </style>
     <div><p>Box</p></div>
     <button>Click here</button>
+     <button id="add">addClass</button>
+    <button id="remove">removeClass</button>
     <!-- <img
       src="https://images.pexels.com/photos/3829441/pexels-photo-3829441.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       alt=""
@@ -27,27 +29,13 @@
       //adding class
       $("div").addClass("box");
       
-      //apply css
-      $("p").css({ padding: "30px" }),
-        $("button").css({ "margin-top": "30px" });
-      // $("box").css({ "background-color": "orange" });
-
       $(".box").css({
         color: "white",
         "background-color": "yellowgreen",
         height: "100px",
         width: "100px",
       });
-      $(".box").addClass("intro");
-
-      // $(".intro").css({"background-color": "orange"});
-      $(".box").removeClass("intro");
-      console.log("remove class");
-
-      //remove class
-      // console.log($("img").attr("src"));
-      // $("p").removeClass("intro");
-
+      
       //animation
 
       $("button").click(() => {
@@ -56,6 +44,15 @@
           height: "150px",
           width: "150px",
         });
+      });
+      //add and remove class
+        $('#add').click(() => {
+        className = prompt('Enter class name: ');
+        console.log($('.box').addClass(className));
+      });
+      $('#remove').click(() => {
+        className = prompt('Enter class name: ');
+        console.log($('.box').removeClass(className));
       });
     </script>
   </body>
