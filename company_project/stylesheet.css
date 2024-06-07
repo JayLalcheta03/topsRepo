@@ -4,14 +4,15 @@
   box-sizing: border-box;
 }
 body {
+  /* font-family: "Poppins", sans-serif; */
+
   margin: 0 auto;
   padding: 20px 70px;
   font-size: 1.3rem;
 }
 
 .poppins-thin {
-  font-family: "Poppins", sans-serif;
-  /* font-size: 1.3rem; */
+  font-size: 1.3rem;
 }
 .head_menu {
   display: flex;
@@ -192,6 +193,44 @@ input[type="search"] {
 /* .compony_footer_section { */
   /* background-color: black; */
 /* } */
+.jumpstart_business{
+  display: flex;
+  justify-content: center;
+}
+
+.jumpstart_business_container h3{
+  margin-top: 30px;
+  text-align: center;
+  color: blue;
+}
+.jumpstart_business_container h1 {
+  text-align: center;
+  
+}
+.jumpstart_business_container p {
+  text-align: center;
+  
+}
+.jumpstart_image{
+  padding: 10px;
+  text-align: center;
+  width: 30%;
+}
+.jumpstart_image{
+  margin-top: 50px;
+}
+.jumpstart_image p{
+  width: 90%;
+  padding-left: 31px;
+}
+.jumpstart_image img{
+  height:130px;
+}
+
+
+
+
+
 .company_footer_section {
   background-color: black;
   height: 200px;
@@ -213,7 +252,7 @@ ul li {
   /* justify-content: center; */
 }
 
-h3 {
+.company_footer_info h3 {
   /* width: 30%; */
   gap: 24px;
   display: flex;

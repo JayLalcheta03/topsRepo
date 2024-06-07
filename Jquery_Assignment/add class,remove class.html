@@ -6,12 +6,17 @@
     <title>Document</title>
   </head>
   <body>
+    <style>
+      .intro{
+        background-color: orange;
+      }
+    </style>
     <div><p>Box</p></div>
     <button>Click here</button>
-    <img
+    <!-- <img
       src="https://images.pexels.com/photos/3829441/pexels-photo-3829441.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       alt=""
-    />
+    /> -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
       integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -21,34 +26,37 @@
     <script>
       //adding class
       $("div").addClass("box");
-
+      
       //apply css
-      $("p").css({'padding':'30px'}),
-      $("button").css({'margin-top':'30px'})
+      $("p").css({ padding: "30px" }),
+        $("button").css({ "margin-top": "30px" });
+      // $("box").css({ "background-color": "orange" });
 
       $(".box").css({
         color: "white",
         "background-color": "yellowgreen",
         height: "100px",
         width: "100px",
+      });
+      $(".box").addClass("intro");
 
-      })
+      // $(".intro").css({"background-color": "orange"});
+      $(".box").removeClass("intro");
+      console.log("remove class");
 
       //remove class
-      console.log($("img").attr("src"));
-      $("img").removeAttr("src");
+      // console.log($("img").attr("src"));
+      // $("p").removeClass("intro");
 
       //animation
 
       $("button").click(() => {
         $("div").animate({
-          
           left: "250px",
           height: "150px",
           width: "150px",
         });
       });
-
     </script>
   </body>
 </html>
