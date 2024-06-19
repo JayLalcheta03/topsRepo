@@ -19,8 +19,9 @@ body {
 }
 
 .about_section {
+  margin: 10px 0px;
   padding: 30px 100px;
-  background-color:beige;
+  background-color:rgb(164, 168, 203);
 }
 h1 {
   text-align: center;
@@ -41,20 +42,34 @@ h1 {
   /* display: flex; */
 }
 .about_company_image img {
-  height: 350px;
+  height: 220px;
   /* width: 68%; */
   align-items: center;
   /* margin-left: 13%; */
 }
-hr {
+/* hr {
   margin: 20px;
   border: 2px solid white;
-}
+} */
 .company_footer_section {
   background-color: black;
   height: 200px;
   color: white;
   /* text-decoration: none; */
+}
+.company_footer_info h4 span {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+.company_footer_info h4 span a {
+  text-decoration: none;
+  color: grey;
+}
+.company_footer_info h4 span a::before {
+  content: '\2012';
+  margin-right: 10px;
+  font-weight: 600;
 }
 ul {
   display: flex;

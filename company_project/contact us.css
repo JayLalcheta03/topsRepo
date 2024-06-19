@@ -1,12 +1,15 @@
 * {
-  font-size: 1.3rem;
 }
 body {
-  padding: 30px;
   font-size: 1.3rem;
+
+  padding: 30px;
+  font-family: "Poppins", sans-serif;
+
+  /* font-size: 1.3rem; */
 }
 .poppins-thin {
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
   /* font-size: 1.3rem; */
 }
 .head_menu {
@@ -20,25 +23,107 @@ body {
   color: rgba(240, 255, 255, 0.897);
   border-bottom: 1px solid white;
 }
-.head_menu a {
+.head_menu a{
   color: beige;
 }
-.company_contact_section {
-  /* height: 700px; */
-  margin: 3px;
-  /* padding: 20px; */
+.wrapper{
+		background-color: #62B6CB;
+  
+}
+.wrapper h2{
+  text-align: center;
+  padding: 0 10px 0 0px;
+		margin: 5px 0;
+		color: #FBFBFB;
+}
+.contact__container {
+		display: flex;
+    justify-content: space-evenly;
+		border: 10px solid #62B6CB;
+		border-radius: 10px;
+		margin: 20px;
+		padding: 0 0 10px 10px;
+		/* max-width: 3; */
+		background-color: #62B6CB;
+}
+p{
+  margin: 0px;
+}
+.contact__container h2{
+  text-align: center;
+}
 
-  color: beige;
-  /* background-color: aquamarine; */
+.contact__title {
+		display: inline-block;
 }
-.contactimage{
-  padding: 59px;
+
+ h2 {
+		
 }
-.contactform {
-  /* width: ; */
-  display: grid;
-  row-gap: 26px;
-  grid-template-columns: 269px 300px;
+
+.contact__form {
+		padding: 10px 10px 0 0;
+}
+
+hr {
+		width: 100%;
+		display: block;
+		margin: 5px 0;
+		height: 5px;
+		border: 0;
+		background-color: #FBFBFB;
+}
+
+input,
+textarea {
+		width: 100%;
+		border: 5px solid #FFFFFF;
+		border-radius: 5px;
+		resize: none;
+		padding: 0 5px;
+		box-sizing: border-box;
+		font-family: 'Open Sans' sans-serif;
+		font-size: 18px;
+		color: #25606f;
+}
+
+input[type="text"] {
+		padding: 0;
+		height: 40px;
+		width: 100%;
+}
+
+/* input:focus,
+textarea:focus {
+		outline: none;
+} */
+
+.contact__form-input {
+		margin: 5px 0 10px 0;
+}
+
+.contact__form-textarea {
+		margin: 5px 0;
+		width: 100%;
+		height: 100px;
+}
+
+input[type="submit"] {
+		width: 100%;
+		height: 50px;
+		background-color: #25606f;
+		border: 0;
+		color: #FBFBFB;
+		border: 5px solid #25606f;
+		border-radius: 5px;
+		margin: 10px 0 0 0;
+		font-family: 'Open Sans' sans-serif;
+		font-size: 22px;
+}
+
+input[type="submit"]:hover {
+		background-color: #368da2;
+		border: #368da2;
 }
 .contactForm_and_image {
   background-color: beige;
@@ -80,6 +165,20 @@ button{
   color: white;
   /* text-decoration: none; */
 }
+.company_footer_info h4 span {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+.company_footer_info h4 span a {
+  text-decoration: none;
+  color: grey;
+}
+.company_footer_info h4 span a::before {
+  content: '\2012';
+  margin-right: 10px;
+  font-weight: 600;
+}
 ul {
   display: flex;
   list-style-type: none;
@@ -103,6 +202,7 @@ h3 {
   justify-content: center;
 }
 .contactimage img{
+  margin-top: 54px;
   height: 293px;
   width: 300px;
 }
