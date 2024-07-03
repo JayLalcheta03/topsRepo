@@ -1,0 +1,44 @@
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.artical_cards {
+  border: 2px solid blueviolet;
+  padding: 10px;
+  background-color: aqua;
+  width: 20%;
+ 
+  
+}
+.artical_cards:hover{
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;}
+.artical_cards h1 {
+  margin: 0px;
+}
+.cards {
+  display: flex;
+  margin: 50px;
+  justify-content: center;
+  gap: 10px;
+}
+
+.buttons {
+  @extend .cards;
+  margin: 0px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.buttons button {
+  height: 30px;
+  background-color: aliceblue;
+  width: 20%;
+}
+.buttons button:nth-child(5) {
+  width: 100%;
+}
+.artical_cards:nth-child(3) {
+  width: 32%;
+}

@@ -1,0 +1,96 @@
+
+@mixin row-column($row_start, $row_end, $column_start, $column_end) {
+  grid-row-start: $row_start;
+  grid-row-end: $row_end;
+  grid-column-start: $column_start;
+  grid-column-end: $column_end;
+}
+@mixin flex_properties() {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: black;
+}
+.parent {
+  height: 100%;
+  width: 100%;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(10, 140px);
+  grid-template-rows: repeat(4, 170px);
+  row-gap: 10px;
+  column-gap: 10px;
+}
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border: 3px solid black;
+}
+.logo {
+  color: white;
+}
+.info {
+  @include flex_properties();
+  @include row-column(1, 4, 9, 10);
+  text-align: right;
+  padding-right: 10px;
+  font-size: 19px;
+  justify-content: space-evenly;
+}
+
+.menu {
+  @include flex_properties();
+}
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+.menu a:hover {
+  color: red;
+}
+.icons {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+
+img:nth-child(1) {
+  @include row-column(1, 2, 1, 7);
+}
+img:nth-child(2) {
+  @include row-column(1, 2, 7, 9);
+}
+img:nth-child(3) {
+  @include row-column(2, 3, 1, 3);
+}
+img:nth-child(4) {
+  @include row-column(2, 3, 3, 7);
+}
+img:nth-child(5) {
+  @include row-column(2, 3, 7, 9);
+}
+img:nth-child(6) {
+  @include row-column(3, 4, 1, 5);
+}
+img:nth-child(7) {
+  @include row-column(3, 4, 5, 9);
+}
+img:nth-child(8) {
+  @include row-column(4, 5, 1, 3);
+}
+img:nth-child(9) {
+  @include row-column(4, 5, 3, 6);
+}
+img:nth-child(10) {
+  @include row-column(4, 5, 6, 9);
+}
+
+.icons {
+  color: white;
+}
