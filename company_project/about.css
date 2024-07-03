@@ -21,25 +21,29 @@ body {
 .about_section {
   margin: 10px 0px;
   padding: 30px 100px;
-  background-color:rgb(164, 168, 203);
+  background-color: rgb(164, 168, 203);
 }
 h1 {
   text-align: center;
 }
 .about_info {
-  width: 40%;
   /* margin: 84px; */
 }
 .about_company_info {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap-reverse;
   /* padding: 20px; */
 }
 .about_company_image {
   /* width: 50%; */
   /* padding: 30px; */
   /* display: flex; */
+}
+
+.second {
+  flex-wrap: wrap;
 }
 .about_company_image img {
   height: 220px;
@@ -53,13 +57,13 @@ h1 {
 } */
 .company_footer_section {
   background-color: black;
-  height: 200px;
   color: white;
+  padding: 20px;
   /* text-decoration: none; */
 }
 .company_footer_info h4 span {
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   gap: 30px;
 }
 .company_footer_info h4 span a {
@@ -108,8 +112,32 @@ h3 {
   justify-content: center;
 }
 .footer_coppyright_info h4 {
-  width: 34%;
   text-align: center;
   color: rgba(240, 248, 255, 0.211);
   margin-top: 0px;
+}
+
+.company_footer_info h4 span {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+  .about_section {
+    padding: 20px;
+  }
+  .company_footer_info h4 span a {
+    display: block;
+    width: 100%;
+  }
+}
+@media (min-width: 600px) {
+  .about_company_info p {
+    max-width: 500px;
+  }
+}
+@media (min-width: 768px) {
+  .about_section {
+    padding: 50px;
+  }
 }
