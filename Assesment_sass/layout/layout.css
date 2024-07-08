@@ -1,0 +1,27 @@
+.container {
+  margin: auto;
+  background-color: black;
+}
+
+.imagebox_1 {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.image_1 {
+  padding: 20px;
+  transform: rotate(-45deg);
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.image_1 img {
+  height: 90px;
+  width: 90px;
+}
+
+.hidden {
+  visibility: hidden;
+}/*# sourceMappingURL=layout.css.map */
