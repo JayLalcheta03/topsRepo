@@ -10,7 +10,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-      <link href="output.css" rel="stylesheet">
+    <link href="output.css" rel="stylesheet" />
 
     <title>Document</title>
     <style>
@@ -74,20 +74,6 @@
         color: rgba(128, 128, 128, 0.857);
         font-size: 32px;
       }
-
-      .indicators {
-        margin-top: 15px;
-        display: flex;
-        justify-content: center;
-        gap: 15px;
-      }
-      .indicator {
-        height: 10px;
-        width: 10px;
-        border-radius: 50%;
-        background-color: grey;
-      }
-
       .btn {
         box-shadow: 5px 20px 50px 10px rgba(211, 211, 211, 0.374);
       }
@@ -98,37 +84,37 @@
       <div class="slider bg-slate-900">
         <div class="slider-items w-[600px] flex justify-center items-center">
           <div
-            class="btn w-[200px] h-12 rounded-md flex justify-center items-center text-white bg-blue-600 "
+            class="btn w-[200px] h-12 rounded-md flex justify-center items-center text-white bg-blue-600"
           >
-           SLIDE 1
+            SLIDE 1
           </div>
         </div>
         <div class="slider-items w-full flex justify-center items-center">
           <div
             class="btn w-[200px] h-12 rounded-md flex justify-center items-center text-white bg-orange-500"
           >
-           SLIDE 2
+            SLIDE 2
           </div>
         </div>
         <div class="slider-items w-full flex justify-center items-center">
           <div
             class="btn w-[200px] h-12 rounded-md flex justify-center items-center text-white bg-purple-400"
           >
-           SLIDE 3
+            SLIDE 3
           </div>
         </div>
         <div class="slider-items w-full flex justify-center items-center">
           <div
             class="btn w-[200px] h-12 rounded-md flex justify-center items-center text-white bg-red-400"
           >
-           SLIDE 4
+            SLIDE 4
           </div>
         </div>
         <div class="slider-items w-full flex justify-center items-center">
           <div
             class="btn w-[200px] h-12 rounded-md flex justify-center items-center text-white bg-green-900"
           >
-           SLIDE 5
+            SLIDE 5
           </div>
         </div>
       </div>
@@ -138,13 +124,6 @@
         <div class="right">
           <i class="fa-solid fa-circle-chevron-right"></i>
         </div>
-      </div>
-      <div class="indicators">
-        <div class="indicator"></div>
-        <div class="indicator"></div>
-        <div class="indicator"></div>
-        <div class="indicator"></div>
-        <div class="indicator"></div>
       </div>
     </div>
 
@@ -156,35 +135,24 @@
     ></script>
 
     <script>
-      let sliderItems = $('.slider-items');
-      let indicators = $('.indicator');
-
-      let indicatorIndex = 2;
-      indicators[2].style.backgroundColor = 'orangered';
+      let sliderItems = $(".slider-items");
 
       let leftCounter = 1;
       let rightCounter = 1;
 
-      $('.left').click(() => {
+      $(".left").click(() => {
         if (sliderItems[0].offsetLeft > -2400) {
           for (let i = 0; i < sliderItems.length; i++) {
-            indicators[i].style.backgroundColor = 'grey';
             sliderItems[i].style.left = `${sliderItems[i].offsetLeft - 600}px`;
           }
         }
-
-        indicatorIndex++;
-        indicators[indicatorIndex].style.backgroundColor = 'orangered';
       });
-      $('.right').click(() => {
+      $(".right").click(() => {
         if (sliderItems[0].offsetLeft < 0) {
           for (let i = 0; i < sliderItems.length; i++) {
-            indicators[i].style.backgroundColor = 'grey';
             sliderItems[i].style.left = `${sliderItems[i].offsetLeft + 600}px`;
           }
         }
-        indicatorIndex--;
-        indicators[indicatorIndex].style.backgroundColor = 'orangered';
       });
     </script>
     <script src="https://cdn.tailwindcss.com"></script>
