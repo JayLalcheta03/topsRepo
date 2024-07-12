@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="design.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </head>
+
+  <body>
+    <!--========================== navbar start ======================-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bgcmain">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="#">Carousel</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!--========================== slider start ======================-->
+
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://images.pexels.com/photos/1910225/pexels-photo-1910225.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            class="d-block w-100 imgheight"
+            height="400px"
+            alt="..."
+          />
+          <div class="carousel-caption d-md-block">
+            <h1 class="midh1">One More for Good Measure.</h1>
+            <p>
+              Some representative placeholder content for the first slide.Some
+              representative<br />
+              placeholder content for the first slide.
+            </p>
+            <button type="button" class="btn btn-lg bg-primary text-white">
+              Browse Gallery
+            </button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://images.pexels.com/photos/2156881/pexels-photo-2156881.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            class="d-block w-100 imgheight"
+            alt="..."
+          />
+          <div class="carousel-caption d-md-block">
+            <h1>One More for Good Measure.</h1>
+            <p>
+              Some representative placeholder content for the first slide.Some
+              representative<br />
+              placeholder content for the first slide.
+            </p>
+            <button type="button" class="btn btn-lg bg-primary text-white">
+              Browse Gallery
+            </button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://images.pexels.com/photos/5278747/pexels-photo-5278747.jpeg?auto=compress&cs=tinysrgb&w=600"
+            class="d-block w-100 imgheight"
+            alt="..."
+          />
+          <div class="carousel-caption d-md-block">
+            <h1>One More for Good Measure.</h1>
+            <p>
+              Some representative placeholder content for the first slide.Some
+              representative<br />
+              placeholder content for the first slide.
+            </p>
+            <button type="button" class="btn btn-lg bg-primary text-white">
+              Browse Gallery
+            </button>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!--==================== card start ==========================-->
+
+    <div class="container mt-5">
+      <div class="row card-main">
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://images.pexels.com/photos/3716952/pexels-photo-3716952.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              class="card-img-top onephoto"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://images.pexels.com/photos/4618583/pexels-photo-4618583.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              class="card-img-top onephoto"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://images.pexels.com/photos/14456945/pexels-photo-14456945.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+              class="card-img-top onephoto"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--====================== card2 start ============================-->
+
+    <!--================== first section ===================-->
+
+    <div class="container">
+      <hr class="hr" />
+      <div class="card mb-3">
+        <div class="row">
+          <div class="col-md-6 dfcard">
+            <div class="card-body">
+              <h1 class="card-title">
+                first featurette heading.It ll<br />
+                below you mind.
+              </h1>
+
+              <p class="card-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse
+                tempora<br />
+                laboriosam reprehenderit veritatis eaque illo, voluptate iure,
+                inventore impedit<br />
+                maxime vitae facilis dolores provident porro officiis
+                voluptatibus vero iusto autem.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="https://dnm.nflximg.net/api/v6/BvVbc2Wxr2w6QuoANoSpJKEIWjQ/AAAAQStFQ0DotpzbWJyV4y6XhSg7HAy6-ehb1TgYyeuL67NL14xFL-z3EGP2sEXTjsr2jL7st8RAOA5_LsPE3ylVmHSEt7Bejw8v0CSMzB8iJCAItzdMax_u2kMoE-GCEZvBpNSTsa0Hblukwb8j9fNzCorC_V8.jpg?r=616"
+              class="img-fluid rounded-start secphoto"
+              alt="..."
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--================== Second section ===================-->
+
+    <div class="container">
+      <hr class="hr" />
+      <div class="card mb-3">
+        <div class="row">
+          <div class="col-md-6">
+            <img
+              src="https://images.pexels.com/photos/6325952/pexels-photo-6325952.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              class="img-fluid rounded-start secphoto"
+              alt="..."
+            />
+          </div>
+          <div class="col-md-6 dfcard">
+            <div class="card-body">
+              <h1 class="card-title">
+                Oh yeah,it s that good.see<br />for yourself
+              </h1>
+
+              <p class="card-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse
+                tempora<br />
+                laboriosam reprehenderit veritatis eaque illo, voluptate iure,
+                inventore impedit<br />
+                maxime vitae facilis dolores provident porro officiis
+                voluptatibus vero iusto autem.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--================== third section ===================-->
+
+    <div class="container">
+      <hr class="hr" />
+      <div class="card mb-3">
+        <div class="row">
+          <div class="col-md-6 dfcard">
+            <div class="card-body">
+              <h1 class="card-title">And lastly,this one.<br />checkmate</h1>
+              <p class="card-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse
+                tempora<br />
+                laboriosam reprehenderit veritatis eaque illo, voluptate iure,
+                inventore impedit<br />
+                maxime vitae facilis dolores provident porro officiis
+                voluptatibus vero iusto autem.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="https://t3.ftcdn.net/jpg/02/25/43/84/360_F_225438459_rf2TFCzW8MohNc2jD98Fu9UZg9fAbkBJ.jpg"
+              class="img-fluid rounded-start secphoto"
+              alt="..."
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--=================== footer section =================-->
+
+    <div class="container">
+      <hr class="hr" />
+      <div class="row">
+        <div class="col-md-6">
+          <p>
+            © 2017-2018 company,Inc:-<a href="#">Privacy</a
+            ><a href="#">Terms</a>
+          </p>
+        </div>
+        <div class="col-md-6 footerback">
+          <span><a href="#">Back to top</a></span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

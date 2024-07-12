@@ -1,0 +1,110 @@
+/*======================= navbar start ===============================*/
+* {
+  text-decoration: none !important;
+  list-style-type: none;
+}
+
+.bgcmain {
+  background-color: rgba(0, 0, 0, 0.708);
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.disabled {
+  color: rgba(255, 255, 255, 0.792) !important;
+}
+
+/*=================== slider section ======================*/
+
+.imgheight {
+  height: 500px;
+}
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 4.25rem !important;
+  left: 15%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #fff;
+  text-align: end !important;
+}
+/*========================== card start ===========================*/
+
+.hr {
+  margin-top: 5%;
+  margin-bottom: 4%;
+}
+.card-main {
+  padding-top: 5%;
+}
+
+.card {
+  text-align: center;
+  border: none !important;
+  margin: auto;
+}
+
+.onephoto {
+  border-radius: 50% !important;
+  width: 100px !important;
+  height: 100px;
+  margin-top: 2% !important;
+  margin: auto;
+}
+
+/* <!--====================== card2 start ============================ */
+
+.secphoto {
+  width: 500px !important;
+  height: 500px !important;
+}
+.dfcard {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.footerback {
+  text-align: end;
+}
+
+/*================================== media start ===============================*/
+@media only screen and (max-width: 576px) {
+  .imgheight {
+    height: 310px;
+  }
+  .carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 1.25rem !important;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: start !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .imgheight {
+    height: 320px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .imgheight {
+    height: 320px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .imgheight {
+    height: 320px;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .imgheight {
+    height: 320px;
+  }
+}
