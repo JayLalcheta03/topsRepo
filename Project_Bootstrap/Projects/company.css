@@ -1,0 +1,251 @@
+body {
+  font-family: "Roboto";
+}
+.company_card_info {
+  min-width: 500px;
+}
+.collapse ul li {
+  margin-left: 30px;
+}
+.collapse ul li:nth-child(2),
+.collapse ul li:nth-child(3) {
+  position: relative;
+}
+.collapse ul li:nth-child(2):before,
+.collapse ul li:nth-child(3):before {
+  content: "|";
+  position: absolute;
+  left: -24px;
+  top: 3px;
+  height: 18x;
+  width: 3px;
+  background-color: white;
+}
+.logo {
+  padding-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  width: fit-content;
+}
+.logo_section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  row-gap: 20px;
+}
+.logo img {
+  height: 103px;
+  padding-left: 30px;
+  box-sizing: border-box;
+  object-fit: cover;
+}
+.logo_section h1 {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 39px 25px;
+}
+.search_icon {
+  margin-left: auto;
+}
+.horizontal_menu {
+  background-color: rgba(25, 4, 4, 0.862);
+  padding: 20px;
+}
+.menu_box {
+  margin-top: 30px;
+  gap: 30px;
+  padding-right: 50px;
+  justify-content: end;
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu_box1 {
+  padding: 13px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.696);
+  height: fit-content;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 17px;
+}
+.searchbox {
+  margin-left: 3%;
+  height: 40px;
+  background-color: white;
+  border-radius: 24px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+input[type="search"] {
+  height: 32px;
+  border-radius: 20px;
+  background-color: transparent;
+  font-size: 18px;
+}
+.serch_icon_info {
+  display: flex;
+  justify-content: center;
+}
+.fa-solid {
+  margin: 6px;
+  font-size: 20px;
+}
+
+.serchbox_icon {
+  width: fit-content;
+  border-radius: 20px;
+  background-color: blueviolet;
+}
+.logo h1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.first_word {
+  color: white;
+}
+.secound_word {
+  color: green;
+}
+.menu_box {
+  position: relative;
+
+  bottom: 8px;
+}
+
+.menubox_service_info {
+  position: absolute;
+  background-color: #6e5756;
+  height: 280px;
+  visibility: hidden;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  padding: 20px;
+  border-bottom-right-radius: 24px;
+  border-bottom-left-radius: 24px;
+  transition: all 300ms;
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+.menu_box1:hover {
+  background-color: #6e5756;
+  color: white;
+}
+.menu_box1:hover .menubox_service_info {
+  visibility: visible;
+  bottom: -180px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  transition: none;
+}
+.menu_box_img {
+  width: 29%;
+}
+.menu_box_img img {
+  box-sizing: border-box;
+  height: 200px;
+  width: 50%;
+  margin-top: 33px;
+  padding-left: 2px;
+}
+.menu_box_info {
+  width: 70%;
+}
+.menu_box_info p {
+  margin-top: 30px;
+  text-align: justify;
+  padding-right: 3%;
+  padding-left: 0px;
+}
+.menu_box_info h1 {
+  color: white;
+  margin-top: 30px;
+}
+
+.menu_box_info p {
+  margin-top: 14px;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 20px;
+  }
+  .menu {
+    visibility: hidden;
+  }
+  .logo {
+    padding-top: 1px;
+  }
+  .searchbox {
+    padding: 1px;
+    gap: 2px;
+  }
+  .search_icon {
+    margin-left: 0px;
+  }
+  .horizontal_menu {
+    height: 200px;
+    padding: 6px;
+  }
+  input[type="search"] {
+    font-size: 18px;
+  }
+
+  .company_card_info {
+    min-width: 100%;
+  }
+  .logo img {
+    height: 60px;
+  }
+
+  .horizontal_menu h1 {
+    padding: 10px;
+  }
+  .horizontal_menu .first_word,
+  .horizontal_menu .secound_word {
+    font-size: 24px;
+  }
+  .menu_box_img img {
+    height: 100px;
+    margin-top: 33px;
+    padding-left: 5px;
+  }
+
+  .company_intro {
+    padding: 20px;
+  }
+}
+@media (min-width: 600px) {
+  body {
+    padding: 20px;
+  }
+  .horizontal_menu {
+    padding-bottom: 0;
+  }
+  .logo img {
+    height: 60px;
+  }
+
+  .horizontal_menu h1 {
+    padding: 10px;
+  }
+  .horizontal_menu .first_word,
+  .horizontal_menu .secound_word {
+    font-size: 24px;
+  }
+
+  .menu_box {
+    display: flex;
+  }
+  .company_intro {
+    padding: 20px;
+  }
+}
+@media (min-width: 768px) {
+  body {
+    padding: 20px 50px;
+  }
+}

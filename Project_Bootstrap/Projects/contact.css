@@ -1,0 +1,44 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto";
+}
+
+.company_card_info {
+  min-width: 500px;
+}
+.collapse ul li {
+  margin-left: 30px;
+}
+.collapse ul li:nth-child(2),
+.collapse ul li:nth-child(3) {
+  position: relative;
+}
+.collapse ul li:nth-child(2):before,
+.collapse ul li:nth-child(3):before {
+  content: "|";
+  position: absolute;
+  left: -24px;
+  top: 3px;
+  height: 18x;
+  width: 3px;
+  background-color: white;
+}
+.form-control {
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.form-control:focus,
+.form-control:active {
+  border-color: red;
+}
+.bi {
+  font-size: 24px;
+}
+
+@media (min-width: 600px) {
+  .contact_info {
+    font-size: 1.3rem;
+  }
+}
