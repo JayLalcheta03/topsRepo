@@ -11,17 +11,29 @@
       crossorigin="anonymous"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
-    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
     <style></style>
+    <script>
+    function modecheck() {
+      let getMode = localStorage.getItem("mode");
+  if (getMode == "dark") {
+    document.body.classList.toggle("dark-mode-active");
+  }
+}
+  </script>
   </head>
   <!-- header_menu -->
-  <body class="mx-3 p-2">
+  <body class="mx-3 p-2 position-relative" onload="modecheck()">
+      <div class="dark-mode position-absolute"><i class="fa-solid fa-moon"></i></div>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <!-- <div class="container-fluid"> -->
       <button
         class="navbar-toggler"
         type="button"
@@ -41,7 +53,7 @@
             <a
               class="nav-link text-white w-50"
               aria-current="page"
-              href="company.html"
+              href="../index.html"
               >Home
             </a>
           </li>
@@ -52,15 +64,16 @@
             <a class="nav-link text-white w-50" href="contact.html">Contact</a>
           </li>
         </ul>
+
       </div>
     </nav>
     <!-- heder_menu_end/ -->
 
     <!-- form_section_start -->
-    <div
-      class="contact_info p-2 g-body-tertiary rounded"
-      style="background-color: rgb(30, 30, 122)"
-    >
+    <div class="contact_info p-2 g-body-tertiary rounded"
+      style="background-color:#6c5b7c" >
+ 
+    
       <h2 class="text-white text-center mt-3 fs-1">Contact Us</h2>
       <div class="container mt-3 shadow g-body-tertiary rounded bg-info">
         <div class="row p-2" style="background-color: deepskyblue">
@@ -178,28 +191,15 @@
     <div class="card text-center mt-2 bg-dark text-white">
       <div class="card-body">
         <h3 class="link-secondary">Pages: Home . About us . Contuct us</h3>
-        <div class="d-flex justify-content-around gap-8">
-          <h4 class="link-secondary">
-            Our Activities:
-            <span>
-              <a class="text-decoration-none link-secondary" href="#"
-                >- Web templete</a
-              >
-              <a class="text-decoration-none link-secondary" href="#"
-                >- Web Graphics
-              </a>
-              <a class="text-decoration-none link-secondary" href="#"
-                >- Logo Banner
-              </a>
-              <a class="text-decoration-none link-secondary" href="#"
-                >- Flayer
-              </a>
-              <a class="text-decoration-none link-secondary" href="#"
-                >- Broucher
-              </a>
-            </span>
-          </h4>
-        </div>
+        <div class="company_footer_info link-secondary d-flex ga-3 p-3 justify-content-around p-2">
+        <h4>Our Activities: <span>
+            <a class="text-decoration-none link-secondary " href="template_images.jpg" download>- Web templete</a>
+            <a class="text-decoration-none link-secondary" href="graphicsdesign_images.jpg" download>- Web Graphics </a>
+            <a class="text-decoration-none link-secondary" href="logo_images.jpg" download>- Logo Banner </a>
+            <a class="text-decoration-none link-secondary" href="flayer_images.docx" download>- Flayer </a>
+            <a class="text-decoration-none link-secondary" href="company brochure.pdf" download>- Broucher </a>
+          </span> </h4>
+      </div>
       </div>
       <div class="footer_coppyright_info d-flex justify-content-around">
         <h6 class="link-secondary">
@@ -216,5 +216,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="../js/script.js"></script>
   </body>
 </html>

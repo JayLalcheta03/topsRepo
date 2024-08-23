@@ -1,7 +1,6 @@
 body {
   margin: 0px;
   padding: 0px;
-  font-family: "Roboto";
 }
 
 .company_card_info {
@@ -16,7 +15,7 @@ body {
 }
 .collapse ul li:nth-child(2):before,
 .collapse ul li:nth-child(3):before {
-  content: "|";
+  content: '|';
   position: absolute;
   left: -24px;
   top: 3px;
@@ -36,7 +35,27 @@ body {
 .bi {
   font-size: 24px;
 }
+.dark-mode {
+  top: 30px;
+  right: 15px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: rgba(211, 211, 211, 0.394);
+  color: white;
+  z-index: 10;
+  cursor: pointer;
+  padding-left: 8px;
+  font-size: 1.3rem;
+}
+.dark-mode i {
+  top: 20px;
+  right: -20px;
+}
 
+.dark-mode-active {
+  background-color: #24252e;
+}
 @media (min-width: 600px) {
   .contact_info {
     font-size: 1.3rem;
